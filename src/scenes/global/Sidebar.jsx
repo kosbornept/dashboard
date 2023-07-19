@@ -73,7 +73,7 @@ const Sidebar = () => {
                         {!isCollapsed && (
                             <Box display="flex" justifyContent="space-between" alignItems="center" ml="15px">
                                 <Typography variant='h3' color={colors.grey[100]}>
-                                    ADMINIS
+                                    Nu-Cat
                                 </Typography>
                                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                                     <MenuOutlinedIcon />
@@ -86,15 +86,15 @@ const Sidebar = () => {
                     {!isCollapsed && (
                         <Box mb="25px">
                             <Box display="flex" justifyContent="center" alignItems="center">
-                                <img alt='profile-user' width="100px" height="100px" src={`../../assets/user.jpg`} style={{ cursor: "pointer", borderRadius: "50%", objectFit: "cover"}} />
+                                <img alt='profile-user' width="100px" height="100px" src={`../../assets/user.png`} style={{ cursor: "pointer", borderRadius: "50%", objectFit: "cover"}} />
                             </Box>
 
                             <Box textAlign="center">
                                 <Typography variant='h2' color={colors.grey[100]} fontWeight="bold" sx={{ m: "10px 0 0 0"}}>
-                                    Loki Bean
+                                    Matthäus Franz
                                 </Typography>
                                 <Typography variant='h5' color={colors.greenAccent[500]}>
-                                    VP Fancy Admin
+                                    Vice President
                                 </Typography>
                             </Box>
                         </Box>
@@ -114,7 +114,7 @@ const Sidebar = () => {
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px"}}
                         >
-                            Data
+                            Employees
                         </Typography>
                         <Item 
                             title="Manage Team"
@@ -124,14 +124,14 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Contacts Information"
+                            title="Team Information"
                             to="/contacts"
                             icon={<ContactsOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Invoices Balances"
+                            title="Expenses Receipts"
                             to="/invoices"
                             icon={<ReceiptOutlinedIcon />}
                             selected={selected}
@@ -142,17 +142,17 @@ const Sidebar = () => {
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px"}}
                         >
-                            Pages
+                            Admin
                         </Typography>
                         <Item 
-                            title="Profile Form"
+                            title="Create User"
                             to="/form"
                             icon={<PersonOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Calendar"
+                            title="Personal Calendar"
                             to="/calendar"
                             icon={<CalendarTodayOutlinedIcon />}
                             selected={selected}
@@ -170,31 +170,31 @@ const Sidebar = () => {
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px"}}
                         >
-                            Charts
+                            Sales Charts
                         </Typography>
                         <Item 
-                            title="Bar Chart"
+                            title="Pipeline"
                             to="/bar"
                             icon={<BarChartOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Pie Chart"
+                            title="Sales Split"
                             to="/pie"
                             icon={<PieChartOutlineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Line Chart"
+                            title="RoW Sales"
                             to="/line"
                             icon={<TimelineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Geography"
+                            title="Total Sales"
                             to="/geography"
                             icon={<MapOutlinedIcon />}
                             selected={selected}

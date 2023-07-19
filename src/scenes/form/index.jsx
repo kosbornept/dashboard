@@ -3,13 +3,27 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
     const isNonMobile = useMediaQuery("(min-width: 600px)");
 
-    const handleFormSubmit = (values) => {
+    const handleFormSubmit = (values, {resetForm}) => {
         console.log(values);
+        resetForm({ values: "" })
     }
+
+    const notify = () => toast.success('Profile saved.', {
+        position: "bottom-left",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+    });
 
     return (
         <Box m="20px">
@@ -20,7 +34,7 @@ const Form = () => {
                 initialValues={initialValues}
                 validationSchema={userSchema}
             >
-                {({ values, errors, touched, handleBlur, handleChange, handleSubmit }) => (
+                {({ values, errors, touched, handleBlur, handleChange, handleSubmit, isValid, dirty }) => (
                     <form onSubmit={handleSubmit}>
                         <Box 
                             display="grid" 
@@ -110,9 +124,21 @@ const Form = () => {
                             />
                         </Box>
                         <Box display="flex" justifyContent="end" mt="20px">
-                            <Button type="submit" color="secondary" variant="contained">
+                            <Button disabled={!isValid || !dirty} onClick={notify} type="submit" color="secondary" variant="contained">
                                 Create New User
                             </Button>
+                            <ToastContainer
+                                position="bottom-left"
+                                autoClose={5000}
+                                hideProgressBar={false}
+                                newestOnTop={false}
+                                closeOnClick
+                                rtl={false}
+                                pauseOnFocusLoss
+                                draggable
+                                pauseOnHover
+                                theme="colored"
+                            />
                         </Box>
                     </form>
                 )}
@@ -123,7 +149,7 @@ const Form = () => {
 
 const initialValues = {
     firstName: "",
-    lasttName: "",
+    lastName: "",
     email: "",
     contact: "",
     address1: "",

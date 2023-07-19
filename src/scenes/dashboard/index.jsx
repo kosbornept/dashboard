@@ -12,6 +12,8 @@ import BarChart from "../../components/BarChart";
 import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import mockData from "../../data/mockBarData.csv";
+import mockLine from "../../data/mockLine.csv";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -19,7 +21,7 @@ const Dashboard = () => {
 
   return (
     <Box m="20px">
-      <Box display="flex" justifyContent="space-between" alignItems="center">
+      <Box display="flex" justifyContent="space-between" alignItems="center" height="6vh">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
         <Box>
             <Button
@@ -30,6 +32,8 @@ const Dashboard = () => {
                 fontWeight: "bold",
                 padding: "10px 20px",
             }}
+            href={mockData}
+            download="mockData.csv"
             >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
             Download Reports
@@ -56,7 +60,7 @@ const Dashboard = () => {
         >
             <StatBox
                 title="12,361"
-                subtitle="Emails Sent"
+                subtitle="Engagement Sent"
                 progress="0.75"
                 increase="+14%"
                 icon={
@@ -74,10 +78,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
             <StatBox
-                title="431,225"
-                subtitle="Sales Obtained"
-                progress="0.50"
-                increase="+21%"
+                title="$845,652"
+                subtitle="Sales Obtained (YTD)"
+                progress="0.7"
+                increase="-1.2%"
                 icon={
                     <PointOfSaleIcon 
                         sx={{ color: colors.greenAccent[600], fontSize: "26px"} } 
@@ -113,7 +117,7 @@ const Dashboard = () => {
         >
             <StatBox
                 title="1,325,134"
-                subtitle="Traffic Inbound"
+                subtitle="Unique Visitors"
                 progress="0.80"
                 increase="+43%"
                 icon={
@@ -150,18 +154,23 @@ const Dashboard = () => {
                         fontWeight="bold" 
                         color={colors.greenAccent[500]}
                     >
-                        $59,342.42
+                        $488,225
                     </Typography>
                 </Box>
 
                 <Box>
                     <IconButton>
+                        <a
+                            href={mockLine}
+                            download="mockLine.csv"
+                        >
                         <DownloadOutlinedIcon
                             sx={{ 
                                 fontSize: "26px", 
                                 color: colors.greenAccent[500]
                             }}
                         />
+                        </a>
                     </IconButton>
                 </Box>
             </Box>
@@ -190,7 +199,7 @@ const Dashboard = () => {
                         variant="h5" 
                         fontWeight="600"
                     >
-                        Recent Transactions
+                        Recent Orders
                     </Typography>
                 </Box>
                 {mockTransactions.map((transaction, i) => (
@@ -240,7 +249,7 @@ const Dashboard = () => {
                     variant="h5"
                     fontWeight="600"
                 >
-                    Campaign
+                    Current Marketing Campaign
                 </Typography>
                 <Box
                     display="flex"

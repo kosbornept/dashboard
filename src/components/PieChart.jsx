@@ -103,6 +103,24 @@ const PieChart = () => {
           ],
         },
       ]}
+      tooltip={(point)=>{
+        return (
+            <div style={{
+                backgroundColor: colors.grey[800],
+                display: "table-cell",
+                color: colors.greenAccent[400],
+                height: "6em",
+                width: "10em",
+                margin: "auto",
+                textAlign: "center",
+                verticalAlign: "middle",
+                fontSize: "18px"
+            }}
+            >
+                ${point.datum.value},000
+            </div>
+        )
+    }}
     />
   );
 };

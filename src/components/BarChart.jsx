@@ -3,7 +3,6 @@ import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData";
 
-
 const BarChart = ({ isDashboard = false }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
@@ -39,13 +38,13 @@ const BarChart = ({ isDashboard = false }) => {
                 },
                 },
             }}
-            keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+            keys={["lost", "pipeline", "won"]}
             indexBy="country"
             margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
             padding={0.3}
             valueScale={{ type: "linear" }}
             indexScale={{ type: "band", round: true }}
-            colors={{ scheme: "nivo" }}
+            colors={{ scheme: "set1" }}
             defs={[
                 {
                 id: "dots",
@@ -76,7 +75,7 @@ const BarChart = ({ isDashboard = false }) => {
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: isDashboard ? undefined : "country",
+                legend: isDashboard ? undefined : "Country",
                 legendPosition: "middle",
                 legendOffset: 32,
             }}
@@ -84,7 +83,7 @@ const BarChart = ({ isDashboard = false }) => {
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: isDashboard ? undefined : "food",
+                legend: isDashboard ? undefined : "Sales in $ (thousand)",
                 legendPosition: "middle",
                 legendOffset: -40,
             }}
@@ -119,6 +118,26 @@ const BarChart = ({ isDashboard = false }) => {
                 ],
                 },
             ]}
+            tooltip={(point)=>{
+                return (
+                    <div style={{
+                        backgroundColor: colors.grey[800],
+                        display: "table-cell",
+                        color: colors.greenAccent[400],
+                        height: "6em",
+                        width: "10em",
+                        margin: "auto",
+                        textAlign: "center",
+                        verticalAlign: "middle",
+                        fontSize: "18px"
+                    }}
+                    >
+                        ${point.value},000 {point.id}
+                        <br/>
+                        {point.data.countryName}
+                    </div>
+                )
+            }}
             role="application"
             barAriaLabel={function (e) {
                 return e.id + ": " + e.formattedValue + " in country: " + e.indexValue;

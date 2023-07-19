@@ -45,7 +45,7 @@ const Calendar = () => {
 
     return (
         <Box m="20px">
-            <Header title="CALENDAR" subtitle="Full Calendar Interactive Page" />
+            <Header title="CALENDAR" subtitle="Personal Schedule" />
             <Box display="flex" justifyContent="space-between">
 
                 {/* Calendar Sidebar */}

@@ -2,316 +2,499 @@ import { tokens } from "../theme";
 
 export const mockDataTeam = [
   {
-    id: 1,
-    name: "Jon Snow",
-    email: "jonsnow@gmail.com",
-    age: 35,
-    phone: "(665)121-5454",
-    access: "admin",
-  },
-  {
-    id: 2,
-    name: "Cersei Lannister",
-    email: "cerseilannister@gmail.com",
-    age: 42,
-    phone: "(421)314-2288",
-    access: "manager",
-  },
-  {
-    id: 3,
-    name: "Jaime Lannister",
-    email: "jaimelannister@gmail.com",
-    age: 45,
-    phone: "(422)982-6739",
-    access: "user",
-  },
-  {
-    id: 4,
-    name: "Anya Stark",
-    email: "anyastark@gmail.com",
-    age: 16,
-    phone: "(921)425-6742",
-    access: "admin",
-  },
-  {
-    id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    age: 31,
-    phone: "(421)445-1189",
-    access: "user",
-  },
-  {
-    id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    age: 150,
-    phone: "(232)545-6483",
-    access: "manager",
-  },
-  {
-    id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    age: 44,
-    phone: "(543)124-0123",
-    access: "user",
-  },
-  {
-    id: 8,
-    name: "Rossini Frances",
-    email: "rossinifrances@gmail.com",
-    age: 36,
-    phone: "(222)444-5555",
-    access: "user",
-  },
-  {
-    id: 9,
-    name: "Harvey Roxie",
-    email: "harveyroxie@gmail.com",
-    age: 65,
-    phone: "(444)555-6239",
-    access: "admin",
-  },
+		id: 1,
+		name: "Tana Stephens",
+		email: "sed@protonmail.co.uk",
+		age: 40,
+		phone: "(366) 336-8413",
+		access: "Admin"
+	},
+	{
+		id: 2,
+		name: "Regina Cobb",
+		email: "dignissim@yahoo.co.uk",
+		age: 37,
+		phone: "(771) 856-2754",
+		access: "Manager"
+	},
+	{
+		id: 3,
+		name: "Kathleen Snyder",
+		email: "hendrerit.donec@protonmail.ca",
+		age: 33,
+		phone: "1-263-930-2173",
+		access: "Manager"
+	},
+	{
+		id: 4,
+		name: "Hermione Crosby",
+		email: "cubilia.curae@icloud.co.uk",
+		age: 25,
+		phone: "1-502-574-7662",
+		access: "Admin"
+	},
+	{
+		id: 5,
+		name: "Calista Chapman",
+		email: "vel.venenatis.vel@yahoo.edu",
+		age: 35,
+		phone: "(351) 350-5946",
+		access: "User"
+	},
+	{
+		id: 6,
+		name: "Kimberley Winters",
+		email: "vulputate.eu@hotmail.com",
+		age: 27,
+		phone: "(521) 877-1664",
+		access: "User"
+	},
+	{
+		id: 7,
+		name: "Armand Pearson",
+		email: "mauris@hotmail.net",
+		age: 21,
+		phone: "(733) 274-2854",
+		access: "Admin"
+	},
+	{
+		id: 8,
+		name: "Leslie Gomez",
+		email: "elementum.at.egestas@google.co.uk",
+		age: 36,
+		phone: "(738) 828-4341",
+		access: "User"
+	},
+	{
+		id: 9,
+		name: "Basil Grant",
+		email: "nulla@yahoo.net",
+		age: 36,
+		phone: "1-115-284-0154",
+		access: "User"
+	},
+	{
+		id: 10,
+		name: "Jonas Parks",
+		email: "et.malesuada@icloud.co.uk",
+		age: 29,
+		phone: "(286) 559-4093",
+		access: "Manager"
+	},
+	{
+		id: 11,
+		name: "Odette Short",
+		email: "tincidunt@google.ca",
+		age: 51,
+		phone: "1-866-566-5675",
+		access: "Admin"
+	},
+	{
+		id: 12,
+		name: "Ella Moore",
+		email: "nonummy.ultricies@protonmail.com",
+		age: 32,
+		phone: "1-305-717-5858",
+		access: "User"
+	},
+	{
+		id: 13,
+		name: "Hashim Baxter",
+		email: "curabitur.dictum.phasellus@protonmail.org",
+		age: 32,
+		phone: "1-253-474-6565",
+		access: "User"
+	},
+	{
+		id: 14,
+		name: "Rose Goodman",
+		email: "ipsum.donec@protonmail.com",
+		age: 44,
+		phone: "(314) 258-5715",
+		access: "User"
+	},
+	{
+		id: 15,
+		name: "Lucas Mitchell",
+		email: "rhoncus@protonmail.org",
+		age: 53,
+		phone: "(513) 438-4789",
+		access: "Manager"
+	},
+	{
+		id: 16,
+		name: "Damian Schroeder",
+		email: "sed.tortor@outlook.net",
+		age: 40,
+		phone: "1-593-960-4832",
+		access: "User"
+	},
+	{
+		id: 17,
+		name: "Colby Fuentes",
+		email: "et.magnis@protonmail.net",
+		age: 45,
+		phone: "(791) 626-8158",
+		access: "Admin"
+	},
+	{
+		id: 18,
+		name: "Jena Payne",
+		email: "sem.egestas@google.edu",
+		age: 45,
+		phone: "(681) 568-4237",
+		access: "User"
+	},
+	{
+		id: 19,
+		name: "Celeste Blackwell",
+		email: "nec.quam@icloud.co.uk",
+		age: 25,
+		phone: "(336) 828-9987",
+		access: "User"
+	},
+	{
+		id: 20,
+		name: "Kerry Hall",
+		email: "montes@google.org",
+		age: 23,
+		phone: "(495) 972-7238",
+		access: "Manager"
+	}
 ];
 
 export const mockDataContacts = [
   {
-    id: 1,
-    name: "Jon Snow",
-    email: "jonsnow@gmail.com",
-    age: 35,
-    phone: "(665)121-5454",
-    address: "0912 Won Street, Alabama, SY 10001",
-    city: "New York",
-    zipCode: "10001",
-    registrarId: 123512,
-  },
-  {
-    id: 2,
-    name: "Cersei Lannister",
-    email: "cerseilannister@gmail.com",
-    age: 42,
-    phone: "(421)314-2288",
-    address: "1234 Main Street, New York, NY 10001",
-    city: "New York",
-    zipCode: "13151",
-    registrarId: 123512,
-  },
-  {
-    id: 3,
-    name: "Jaime Lannister",
-    email: "jaimelannister@gmail.com",
-    age: 45,
-    phone: "(422)982-6739",
-    address: "3333 Want Blvd, Estanza, NAY 42125",
-    city: "New York",
-    zipCode: "87281",
-    registrarId: 4132513,
-  },
-  {
-    id: 4,
-    name: "Anya Stark",
-    email: "anyastark@gmail.com",
-    age: 16,
-    phone: "(921)425-6742",
-    address: "1514 Main Street, New York, NY 22298",
-    city: "New York",
-    zipCode: "15551",
-    registrarId: 123512,
-  },
-  {
-    id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    age: 31,
-    phone: "(421)445-1189",
-    address: "11122 Welping Ave, Tenting, CD 21321",
-    city: "Tenting",
-    zipCode: "14215",
-    registrarId: 123512,
-  },
-  {
-    id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    age: 150,
-    phone: "(232)545-6483",
-    address: "1234 Canvile Street, Esvazark, NY 10001",
-    city: "Esvazark",
-    zipCode: "10001",
-    registrarId: 123512,
-  },
-  {
-    id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    age: 44,
-    phone: "(543)124-0123",
-    address: "22215 Super Street, Everting, ZO 515234",
-    city: "Evertin",
-    zipCode: "51523",
-    registrarId: 123512,
-  },
-  {
-    id: 8,
-    name: "Rossini Frances",
-    email: "rossinifrances@gmail.com",
-    age: 36,
-    phone: "(222)444-5555",
-    address: "4123 Ever Blvd, Wentington, AD 142213",
-    city: "Esteras",
-    zipCode: "44215",
-    registrarId: 512315,
-  },
-  {
-    id: 9,
-    name: "Harvey Roxie",
-    email: "harveyroxie@gmail.com",
-    age: 65,
-    phone: "(444)555-6239",
-    address: "51234 Avery Street, Cantory, ND 212412",
-    city: "Colunza",
-    zipCode: "111234",
-    registrarId: 928397,
-  },
-  {
-    id: 10,
-    name: "Enteri Redack",
-    email: "enteriredack@gmail.com",
-    age: 42,
-    phone: "(222)444-5555",
-    address: "4123 Easer Blvd, Wentington, AD 142213",
-    city: "Esteras",
-    zipCode: "44215",
-    registrarId: 533215,
-  },
-  {
-    id: 11,
-    name: "Steve Goodman",
-    email: "stevegoodmane@gmail.com",
-    age: 11,
-    phone: "(444)555-6239",
-    address: "51234 Fiveton Street, CunFory, ND 212412",
-    city: "Colunza",
-    zipCode: "1234",
-    registrarId: 92197,
-  },
+		id: 1,
+		name: "Tana Stephens",
+		email: "sed@protonmail.co.uk",
+		age: 40,
+		phone: "(366) 336-8413",
+		address: "P.O. Box 988, 4604 Amet Avenue",
+		city: "Puno",
+		zipCode: "06838"
+	},
+	{
+		id: 2,
+		name: "Regina Cobb",
+		email: "dignissim@yahoo.couk",
+		age: 37,
+		phone: "(771) 856-2754",
+		address: "Ap #943-7005 Imperdiet St.",
+		city: "Tabaco",
+		zipCode: "PI3R 7RM"
+	},
+	{
+		id: 3,
+		name: "Kathleen Snyder",
+		email: "hendrerit.donec@protonmail.ca",
+		age: 33,
+		phone: "1-263-930-2173",
+		address: "612-8330 Est. Rd.",
+		city: "Marawi",
+		zipCode: "31502"
+	},
+	{
+		id: 4,
+		name: "Hermione Crosby",
+		email: "cubilia.curae@icloud.co.uk",
+		age: 25,
+		phone: "1-502-574-7662",
+		address: "P.O. Box 771, 4035 Sed Av.",
+		city: "Halle",
+		zipCode: "2670"
+	},
+	{
+		id: 5,
+		name: "Calista Chapman",
+		email: "vel.venenatis.vel@yahoo.edu",
+		age: 35,
+		phone: "(351) 350-5946",
+		address: "923-1608 Velit Ave",
+		city: "Floridablanca",
+		zipCode: "787318"
+	},
+	{
+		id: 6,
+		name: "Kimberley Winters",
+		email: "vulputate.eu@hotmail.com",
+		age: 27,
+		phone: "(521) 877-1664",
+		address: "548-7056 Non St.",
+		city: "Gujranwala",
+		zipCode: "241768"
+	},
+	{
+		id: 7,
+		name: "Armand Pearson",
+		email: "mauris@hotmail.net",
+		age: 21,
+		phone: "(733) 274-2854",
+		address: "P.O. Box 888, 3133 Dictum Rd.",
+		city: "Rạch Giá",
+		zipCode: "623148"
+	},
+	{
+		id: 8,
+		name: "Leslie Gomez",
+		email: "elementum.at.egestas@google.co.uk",
+		age: 36,
+		phone: "(738) 828-4341",
+		address: "474-6525 Cubilia Ave",
+		city: "Hải Phòng",
+		zipCode: "2343"
+	},
+	{
+		id: 9,
+		name: "Basil Grant",
+		email: "nulla@yahoo.net",
+		age: 36,
+		phone: "1-115-284-0154",
+		address: "Ap #819-6637 Maecenas Rd.",
+		city: "Iksan",
+		zipCode: "880284"
+	},
+	{
+		id: 10,
+		name: "Jonas Parks",
+		email: "et.malesuada@icloud.co.uk",
+		age: 29,
+		phone: "(286) 559-4093",
+		address: "Ap #179-7455 Amet, St.",
+		city: "Subbiano",
+		zipCode: "3215-4451"
+	},
+	{
+		id: 11,
+		name: "Odette Short",
+		email: "tincidunt@google.ca",
+		age: 51,
+		phone: "1-866-566-5675",
+		address: "910-8272 Elit, Street",
+		city: "Ang Mo Kio",
+		zipCode: "25-52"
+	},
+	{
+		id: 12,
+		name: "Ella Moore",
+		email: "nonummy.ultricies@protonmail.com",
+		age: 32,
+		phone: "1-305-717-5858",
+		address: "668-436 Nulla Road",
+		city: "Badajoz",
+		zipCode: "5741"
+	},
+	{
+		id: 13,
+		name: "Hashim Baxter",
+		email: "curabitur.dictum.phasellus@protonmail.org",
+		age: 32,
+		phone: "1-253-474-6565",
+		address: "Ap #459-4273 Mattis. Ave",
+		city: "Katowice",
+		zipCode: "696945"
+	},
+	{
+		id: 14,
+		name: "Rose Goodman",
+		email: "ipsum.donec@protonmail.com",
+		age: 44,
+		phone: "(314) 258-5715",
+		address: "839-6485 Sociis St.",
+		city: "Terneuzen",
+		zipCode: "6133"
+	},
+	{
+		id: 15,
+		name: "Lucas Mitchell",
+		email: "rhoncus@protonmail.org",
+		age: 53,
+		phone: "(513) 438-4789",
+		address: "888-1067 Tellus St.",
+		city: "Cabadbaran",
+		zipCode: "184143"
+	},
+	{
+		id: 16,
+		name: "Damian Schroeder",
+		email: "sed.tortor@outlook.net",
+		age: 40,
+		phone: "1-593-960-4832",
+		address: "Ap #361-3531 Risus. St.",
+		city: "Johannesburg",
+		zipCode: "355958"
+	},
+	{
+		id: 17,
+		name: "Colby Fuentes",
+		email: "et.magnis@protonmail.net",
+		age: 45,
+		phone: "(791) 626-8158",
+		address: "471-6220 At St.",
+		city: "Wazirabad",
+		zipCode: "928671"
+	},
+	{
+		id: 18,
+		name: "Jena Payne",
+		email: "sem.egestas@google.edu",
+		age: 45,
+		phone: "(681) 568-4237",
+		address: "Ap #311-3129 Elit, Avenue",
+		city: "Elbląg",
+		zipCode: "55366"
+	},
+	{
+		id: 19,
+		name: "Celeste Blackwell",
+		email: "nec.quam@icloud.co.uk",
+		age: 25,
+		phone: "(336) 828-9987",
+		address: "Ap #139-8457 Nisl Street",
+		city: "Oudtshoorn",
+		zipCode: "J8P 4L7"
+	},
+	{
+		id: 20,
+		name: "Kerry Hall",
+		email: "montes@google.org",
+		age: 23,
+		phone: "(495) 972-7238",
+		address: "Ap #376-7542 Ultrices Av.",
+		city: "Gdańsk",
+		zipCode: "1218"
+	}
 ];
 
 export const mockDataInvoices = [
   {
     id: 1,
-    name: "Jon Snow",
-    email: "jonsnow@gmail.com",
-    cost: "21.24",
-    phone: "(665)121-5454",
+    name: "Tana Stephens",
+		email: "sed@protonmail.co.uk",
+		cost: "1.69",
+		phone: "(366) 336-8413",
     date: "03/12/2022",
   },
   {
     id: 2,
-    name: "Cersei Lannister",
-    email: "cerseilannister@gmail.com",
-    cost: "1.24",
-    phone: "(421)314-2288",
+    name: "Regina Cobb",
+		email: "dignissim@yahoo.co.uk",
+		cost: "13.92",
+		phone: "(771) 856-2754",
     date: "06/15/2021",
   },
   {
     id: 3,
-    name: "Jaime Lannister",
-    email: "jaimelannister@gmail.com",
-    cost: "11.24",
-    phone: "(422)982-6739",
+    name: "Tana Stephens",
+		email: "sed@protonmail.co.uk",
+		cost: "62.15",
+		phone: "(366) 336-8413",
     date: "05/02/2022",
   },
   {
     id: 4,
-    name: "Anya Stark",
-    email: "anyastark@gmail.com",
-    cost: "80.55",
-    phone: "(921)425-6742",
+    name: "Tana Stephens",
+		email: "sed@protonmail.co.uk",
+		cost: "56.34",
+		phone: "(366) 336-8413",
     date: "03/21/2022",
   },
   {
     id: 5,
-    name: "Daenerys Targaryen",
-    email: "daenerystargaryen@gmail.com",
-    cost: "1.24",
-    phone: "(421)445-1189",
+    name: "Hermione Crosby",
+		email: "cubilia.curae@icloud.co.uk",
+		cost: "51.75",
+		phone: "1-502-574-7662",
     date: "01/12/2021",
   },
   {
     id: 6,
-    name: "Ever Melisandre",
-    email: "evermelisandre@gmail.com",
-    cost: "63.12",
-    phone: "(232)545-6483",
+    name: "Kimberley Winters",
+		email: "vulputate.eu@hotmail.com",
+		cost: "85.07",
+		phone: "(521) 877-1664",
     date: "11/02/2022",
   },
   {
     id: 7,
-    name: "Ferrara Clifford",
-    email: "ferraraclifford@gmail.com",
-    cost: "52.42",
-    phone: "(543)124-0123",
+    name: "Kimberley Winters",
+		email: "vulputate.eu@hotmail.com",
+		cost: "48.24",
+		phone: "(521) 877-1664",
     date: "02/11/2022",
   },
   {
     id: 8,
-    name: "Rossini Frances",
-    email: "rossinifrances@gmail.com",
-    cost: "21.24",
-    phone: "(222)444-5555",
+    name: "Basil Grant",
+		email: "nulla@yahoo.net",
+		cost: "456.32",
+		phone: "1-115-284-0154",
     date: "05/02/2021",
+  },
+  {
+    id: 9,
+    name: "Basil Grant",
+		email: "nulla@yahoo.net",
+		cost: "27.23",
+		phone: "1-115-284-0154",
+    date: "05/22/2021",
+  },
+  {
+    id: 10,
+    name: "Basil Grant",
+		email: "nulla@yahoo.net",
+		cost: "1.32",
+		phone: "1-115-284-0154",
+    date: "05/01/2021",
   },
 ];
 
 export const mockTransactions = [
   {
     txId: "01e4dsa",
-    user: "johndoe",
+    user: "RisusCorp",
     date: "2021-09-01",
     cost: "43.95",
   },
   {
     txId: "0315dsaa",
-    user: "jackdower",
+    user: "RutrumCon",
     date: "2022-04-01",
     cost: "133.45",
   },
   {
     txId: "01e4dsa",
-    user: "aberdohnny",
+    user: "Purus LLC",
     date: "2021-09-01",
     cost: "43.95",
   },
   {
     txId: "51034szv",
-    user: "goodmanave",
+    user: "ProinAss",
     date: "2022-11-05",
     cost: "200.95",
   },
   {
     txId: "0a123sb",
-    user: "stevebower",
+    user: "LaciniaPC",
     date: "2022-11-02",
     cost: "13.55",
   },
   {
     txId: "01e4dsa",
-    user: "aberdohnny",
+    user: "Purus LLC",
     date: "2021-09-01",
     cost: "43.95",
   },
   {
     txId: "120s51a",
-    user: "wootzifer",
+    user: "LaciniaPC",
     date: "2019-04-15",
     cost: "24.20",
   },
   {
     txId: "0315dsaa",
-    user: "jackdower",
+    user: "RutrumCon",
     date: "2022-04-01",
     cost: "133.45",
   },
@@ -319,112 +502,84 @@ export const mockTransactions = [
 
 export const mockBarData = [
   {
-    country: "AD",
-    "hot dog": 137,
-    "hot dogColor": "hsl(229, 70%, 50%)",
-    burger: 96,
-    burgerColor: "hsl(296, 70%, 50%)",
-    kebab: 72,
-    kebabColor: "hsl(97, 70%, 50%)",
-    donut: 140,
-    donutColor: "hsl(340, 70%, 50%)",
+    country: "FR",
+    countryName: "France",
+    pipeline: 137,
+    won: 96,
+    lost: 72,
   },
   {
-    country: "AE",
-    "hot dog": 55,
-    "hot dogColor": "hsl(307, 70%, 50%)",
-    burger: 28,
-    burgerColor: "hsl(111, 70%, 50%)",
-    kebab: 58,
-    kebabColor: "hsl(273, 70%, 50%)",
-    donut: 29,
-    donutColor: "hsl(275, 70%, 50%)",
+    country: "GB",
+    countryName: "Great Britain",
+    pipeline: 55,
+    won: 28,
+    lost: 58,
   },
   {
-    country: "AF",
-    "hot dog": 109,
-    "hot dogColor": "hsl(72, 70%, 50%)",
-    burger: 23,
-    burgerColor: "hsl(96, 70%, 50%)",
-    kebab: 34,
-    kebabColor: "hsl(106, 70%, 50%)",
-    donut: 152,
-    donutColor: "hsl(256, 70%, 50%)",
+    country: "CH",
+    countryName: "Switzerland",
+    pipeline: 109,
+    won: 23,
+    lost: 34,
   },
   {
-    country: "AG",
-    "hot dog": 133,
-    "hot dogColor": "hsl(257, 70%, 50%)",
-    burger: 52,
-    burgerColor: "hsl(326, 70%, 50%)",
-    kebab: 43,
-    kebabColor: "hsl(110, 70%, 50%)",
-    donut: 83,
-    donutColor: "hsl(9, 70%, 50%)",
+    country: "ES",
+    countryName: "Spain",
+    pipeline: 133,
+    won: 52,
+    lost: 43,
   },
   {
-    country: "AI",
-    "hot dog": 81,
-    "hot dogColor": "hsl(190, 70%, 50%)",
-    burger: 80,
-    burgerColor: "hsl(325, 70%, 50%)",
-    kebab: 112,
-    kebabColor: "hsl(54, 70%, 50%)",
-    donut: 35,
-    donutColor: "hsl(285, 70%, 50%)",
+    country: "PT",
+    countryName: "Portugal",
+    pipeline: 81,
+    won: 80,
+    lost: 112,
   },
   {
-    country: "AL",
-    "hot dog": 66,
-    "hot dogColor": "hsl(208, 70%, 50%)",
-    burger: 111,
-    burgerColor: "hsl(334, 70%, 50%)",
-    kebab: 167,
-    kebabColor: "hsl(182, 70%, 50%)",
-    donut: 18,
-    donutColor: "hsl(76, 70%, 50%)",
+    country: "IT",
+    countryName: "Italy",
+    pipeline: 66,
+    won: 111,
+    lost: 167,
   },
   {
-    country: "AM",
-    "hot dog": 80,
-    "hot dogColor": "hsl(87, 70%, 50%)",
-    burger: 47,
-    burgerColor: "hsl(141, 70%, 50%)",
-    kebab: 158,
-    kebabColor: "hsl(224, 70%, 50%)",
-    donut: 49,
-    donutColor: "hsl(274, 70%, 50%)",
+    country: "DE",
+    countryName: "Germany",
+    pipeline: 80,
+    won: 47,
+    lost: 158,
   },
 ];
 
 export const mockPieData = [
   {
-    id: "hack",
-    label: "hack",
+    id: "Treats",
+    label: "Treats",
     value: 239,
     color: "hsl(104, 70%, 50%)",
   },
   {
-    id: "make",
-    label: "make",
+    id: "Litter",
+    label: "Litter",
     value: 170,
     color: "hsl(162, 70%, 50%)",
   },
   {
-    id: "go",
-    label: "go",
+    id: "Pet Hotel",
+    label: "Pet Hotel",
     value: 322,
     color: "hsl(291, 70%, 50%)",
   },
   {
-    id: "lisp",
-    label: "lisp",
+    id: "Wet Food",
+    label: "Wet Food",
     value: 503,
     color: "hsl(229, 70%, 50%)",
   },
   {
-    id: "scala",
-    label: "scala",
+    id: "Dry Food",
+    label: "Dry Food",
     value: 584,
     color: "hsl(344, 70%, 50%)",
   },
@@ -432,269 +587,243 @@ export const mockPieData = [
 
 export const mockLineData = [
   {
-    id: "japan",
+    id: "Africa",
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: "plane",
+        x: "2011",
         y: 101,
       },
       {
-        x: "helicopter",
+        x: "2012",
         y: 75,
       },
       {
-        x: "boat",
+        x: "2013",
         y: 36,
       },
       {
-        x: "train",
+        x: "2014",
         y: 216,
       },
       {
-        x: "subway",
+        x: "2015",
         y: 35,
       },
       {
-        x: "bus",
+        x: "2016",
         y: 236,
       },
       {
-        x: "car",
+        x: "2017",
         y: 88,
       },
       {
-        x: "moto",
+        x: "2018",
         y: 232,
       },
       {
-        x: "bicycle",
+        x: "2019",
         y: 281,
       },
       {
-        x: "horse",
+        x: "2020",
         y: 1,
       },
       {
-        x: "skateboard",
+        x: "2021",
         y: 35,
       },
       {
-        x: "others",
+        x: "2022",
         y: 14,
       },
     ],
   },
   {
-    id: "france",
+    id: "Asia",
     color: tokens("dark").blueAccent[300],
     data: [
       {
-        x: "plane",
+        x: "2011",
         y: 212,
       },
       {
-        x: "helicopter",
+        x: "2012",
         y: 190,
       },
       {
-        x: "boat",
+        x: "2013",
         y: 270,
       },
       {
-        x: "train",
+        x: "2014",
         y: 9,
       },
       {
-        x: "subway",
+        x: "2015",
         y: 75,
       },
       {
-        x: "bus",
+        x: "2016",
         y: 175,
       },
       {
-        x: "car",
+        x: "2017",
         y: 33,
       },
       {
-        x: "moto",
+        x: "2018",
         y: 189,
       },
       {
-        x: "bicycle",
+        x: "2019",
         y: 97,
       },
       {
-        x: "horse",
+        x: "2020",
         y: 87,
       },
       {
-        x: "skateboard",
+        x: "2021",
         y: 299,
       },
       {
-        x: "others",
+        x: "2022",
         y: 251,
       },
     ],
   },
   {
-    id: "us",
+    id: "Americas",
     color: tokens("dark").redAccent[200],
     data: [
       {
-        x: "plane",
+        x: "2011",
         y: 191,
       },
       {
-        x: "helicopter",
+        x: "2012",
         y: 136,
       },
       {
-        x: "boat",
+        x: "2013",
         y: 91,
       },
       {
-        x: "train",
+        x: "2014",
         y: 190,
       },
       {
-        x: "subway",
+        x: "2015",
         y: 211,
       },
       {
-        x: "bus",
+        x: "2016",
         y: 152,
       },
       {
-        x: "car",
+        x: "2017",
         y: 189,
       },
       {
-        x: "moto",
+        x: "2018",
         y: 152,
       },
       {
-        x: "bicycle",
+        x: "2019",
         y: 8,
       },
       {
-        x: "horse",
+        x: "2020",
         y: 197,
       },
       {
-        x: "skateboard",
+        x: "2021",
         y: 107,
       },
       {
-        x: "others",
+        x: "2022",
         y: 170,
       },
     ],
   },
+  {
+    id: "Europe",
+    color: tokens("dark").primary[200],
+    data: [
+      {
+        x: "2011",
+        y: 42,
+      },
+      {
+        x: "2012",
+        y: 136,
+      },
+      {
+        x: "2013",
+        y: 56,
+      },
+      {
+        x: "2014",
+        y: 125,
+      },
+      {
+        x: "2015",
+        y: 278,
+      },
+      {
+        x: "2016",
+        y: 223,
+      },
+      {
+        x: "2017",
+        y: 201,
+      },
+      {
+        x: "2018",
+        y: 198,
+      },
+      {
+        x: "2019",
+        y: 8,
+      },
+      {
+        x: "2020",
+        y: 56,
+      },
+      {
+        x: "2021",
+        y: 52,
+      },
+      {
+        x: "2022",
+        y: 53,
+      },
+    ],
+  }
 ];
 
 export const mockGeographyData = [
   {
-    id: "AFG",
-    value: 520600,
-  },
-  {
-    id: "AGO",
-    value: 949905,
-  },
-  {
-    id: "ALB",
-    value: 329910,
-  },
-  {
-    id: "ARE",
-    value: 675484,
-  },
-  {
     id: "ARG",
     value: 432239,
-  },
-  {
-    id: "ARM",
-    value: 288305,
-  },
-  {
-    id: "ATA",
-    value: 415648,
-  },
-  {
-    id: "ATF",
-    value: 665159,
   },
   {
     id: "AUT",
     value: 798526,
   },
   {
-    id: "AZE",
-    value: 481678,
-  },
-  {
-    id: "BDI",
-    value: 496457,
-  },
-  {
     id: "BEL",
     value: 252276,
-  },
-  {
-    id: "BEN",
-    value: 440315,
-  },
-  {
-    id: "BFA",
-    value: 343752,
-  },
-  {
-    id: "BGD",
-    value: 920203,
   },
   {
     id: "BGR",
     value: 261196,
   },
   {
-    id: "BHS",
-    value: 421551,
-  },
-  {
-    id: "BIH",
-    value: 974745,
-  },
-  {
-    id: "BLR",
-    value: 349288,
-  },
-  {
-    id: "BLZ",
-    value: 305983,
-  },
-  {
     id: "BOL",
     value: 430840,
-  },
-  {
-    id: "BRN",
-    value: 345666,
-  },
-  {
-    id: "BTN",
-    value: 649678,
-  },
-  {
-    id: "BWA",
-    value: 319392,
-  },
-  {
-    id: "CAF",
-    value: 722549,
   },
   {
     id: "CAN",
@@ -713,10 +842,6 @@ export const mockGeographyData = [
     value: 593604,
   },
   {
-    id: "CIV",
-    value: 143219,
-  },
-  {
     id: "CMR",
     value: 630627,
   },
@@ -727,14 +852,6 @@ export const mockGeographyData = [
   {
     id: "COL",
     value: 660527,
-  },
-  {
-    id: "CRI",
-    value: 60262,
-  },
-  {
-    id: "CUB",
-    value: 177870,
   },
   {
     id: "-99",
@@ -751,10 +868,6 @@ export const mockGeographyData = [
   {
     id: "DEU",
     value: 63345,
-  },
-  {
-    id: "DJI",
-    value: 634523,
   },
   {
     id: "DNK",
@@ -817,54 +930,6 @@ export const mockGeographyData = [
     value: 757120,
   },
   {
-    id: "GEO",
-    value: 158702,
-  },
-  {
-    id: "GHA",
-    value: 893180,
-  },
-  {
-    id: "GIN",
-    value: 877288,
-  },
-  {
-    id: "GMB",
-    value: 724530,
-  },
-  {
-    id: "GNB",
-    value: 387753,
-  },
-  {
-    id: "GNQ",
-    value: 706118,
-  },
-  {
-    id: "GRC",
-    value: 377796,
-  },
-  {
-    id: "GTM",
-    value: 66890,
-  },
-  {
-    id: "GUY",
-    value: 719300,
-  },
-  {
-    id: "HND",
-    value: 739590,
-  },
-  {
-    id: "HRV",
-    value: 929467,
-  },
-  {
-    id: "HTI",
-    value: 538961,
-  },
-  {
     id: "HUN",
     value: 146095,
   },
@@ -911,54 +976,6 @@ export const mockGeographyData = [
   {
     id: "JPN",
     value: 199174,
-  },
-  {
-    id: "KAZ",
-    value: 181424,
-  },
-  {
-    id: "KEN",
-    value: 60946,
-  },
-  {
-    id: "KGZ",
-    value: 432478,
-  },
-  {
-    id: "KHM",
-    value: 254461,
-  },
-  {
-    id: "OSA",
-    value: 942447,
-  },
-  {
-    id: "KWT",
-    value: 414413,
-  },
-  {
-    id: "LAO",
-    value: 448339,
-  },
-  {
-    id: "LBN",
-    value: 620090,
-  },
-  {
-    id: "LBR",
-    value: 435950,
-  },
-  {
-    id: "LBY",
-    value: 75091,
-  },
-  {
-    id: "LKA",
-    value: 595124,
-  },
-  {
-    id: "LSO",
-    value: 483524,
   },
   {
     id: "LTU",
@@ -1015,14 +1032,6 @@ export const mockGeographyData = [
   {
     id: "MRT",
     value: 375671,
-  },
-  {
-    id: "MWI",
-    value: 591935,
-  },
-  {
-    id: "MYS",
-    value: 991644,
   },
   {
     id: "NAM",
@@ -1126,7 +1135,7 @@ export const mockGeographyData = [
   },
   {
     id: "SDN",
-    value: 927112,
+    value: 12000,
   },
   {
     id: "SDS",
@@ -1259,14 +1268,6 @@ export const mockGeographyData = [
   {
     id: "PSE",
     value: 476078,
-  },
-  {
-    id: "YEM",
-    value: 957751,
-  },
-  {
-    id: "ZAF",
-    value: 836949,
   },
   {
     id: "ZMB",

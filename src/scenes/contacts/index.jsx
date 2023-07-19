@@ -88,6 +88,13 @@ const Contacts = () => {
                     rows={mockDataContacts}
                     columns={columns}
                     components={{ Toolbar: GridToolbar }}
+                    sx={{
+                        "& .MuiDataGrid-withBorderColor": {
+                            "&:focus": {
+                                outlineColor: colors.grey[100]
+                            }
+                        }
+                    }}
                 />
             </Box>
         </Box>

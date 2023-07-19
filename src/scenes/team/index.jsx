@@ -55,9 +55,9 @@ const Team = () => {
                         }
                         borderRadius="4px"
                     >
-                        {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
-                        {access === "manager" && <SecurityOutlinedIcon />}
-                        {access === "user" && <LockOpenOutlinedIcon />}
+                        {access === "Admin" && <AdminPanelSettingsOutlinedIcon />}
+                        {access === "Manager" && <SecurityOutlinedIcon />}
+                        {access === "User" && <LockOpenOutlinedIcon />}
                         <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
                             {access}
                         </Typography>
@@ -99,6 +99,13 @@ const Team = () => {
                 <DataGrid 
                     rows={mockDataTeam}
                     columns={columns}
+                    sx={{
+                        "& .MuiDataGrid-withBorderColor": {
+                            "&:focus": {
+                                outlineColor: colors.grey[100]
+                            }
+                        }
+                    }}
                 />
             </Box>
         </Box>

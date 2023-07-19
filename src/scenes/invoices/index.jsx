@@ -79,6 +79,13 @@ const Invoices = () => {
                     checkboxSelection 
                     rows={mockDataInvoices}
                     columns={columns}
+                    sx={{
+                        "& .MuiDataGrid-withBorderColor": {
+                            "&:focus": {
+                                outlineColor: colors.grey[100]
+                            }
+                        }
+                    }}
                 />
             </Box>
         </Box>

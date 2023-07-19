@@ -17,12 +17,12 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
                     <Typography color={colors.greenAccent[500]} variant="h5">
-                        An important question.
+                        Why can't I see the dashboard?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Here would be an answer to a Frequently Asked important Question!
+                        Please ensure that you have the correct access required to view company sales data. If you feel like there has been a mistake and you are prevented from access, contact your line manager who can discuss your concerns with you.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -30,12 +30,12 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
                     <Typography color={colors.greenAccent[500]} variant="h5">
-                        Another important question.
+                        My personal details are wrong.
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Here would be an answer to another Frequently Asked important Question!
+                        Contact your line manager if you are unable to edit these details yourself, otherwise please use the edit button on your profile. Maintaining correct contact details is your own responsibility.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -43,12 +43,12 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
                     <Typography color={colors.greenAccent[500]} variant="h5">
-                        Your favourite question.
+                        Holiday Requests
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Probably Pizza, right?
+                        Holidays can be requested in the month of January, with all allocations being completed in February on a first come first served basis. If you do not book your holidays, they will be allocated to you as the company see's fit.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -56,12 +56,12 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
                     <Typography color={colors.greenAccent[500]} variant="h5">
-                        Your least favourite question?
+                        When are paydays?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Washing the dishes.
+                        We pay every first Monday of the month. Advances can be requested in exceptional circumstances and must be approved.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -69,12 +69,12 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
                     <Typography color={colors.greenAccent[500]} variant="h5">
-                        An important question.
+                        How are sales kept updated?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Here would be an answer to a Frequently Asked important Question!
+                        We use SalesForce for all accounts. If you are unfamiliar with the software and wish to be trained for future development, we can assist your growth.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
