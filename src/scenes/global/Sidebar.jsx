@@ -114,7 +114,7 @@ const Sidebar = () => {
                             color={colors.grey[300]}
                             sx={{ m: "15px 0 5px 20px"}}
                         >
-                            Employees
+                            Team
                         </Typography>
                         <Item 
                             title="Manage Team"
@@ -187,14 +187,14 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="RoW Sales"
+                            title="Regional Sales"
                             to="/line"
                             icon={<TimelineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item 
-                            title="Total Sales"
+                            title="Store Locations"
                             to="/geography"
                             icon={<MapOutlinedIcon />}
                             selected={selected}

@@ -88,11 +88,11 @@ export const tokens = (mode) => ({
             200: "#1e5245",
             300: "#2e7c67",
             400: "#3da58a",
-            500: "#4cceac",
-            600: "#70d8bd",
+            500: "#2e7c67",
+            600: "#3da58a",
             700: "#94e2cd",
             800: "#b7ebde",
-            900: "#dbf5ee"
+            900: "#94e2cd"
         },
         redAccent: {
             100: "#2c100f",
@@ -113,7 +113,7 @@ export const tokens = (mode) => ({
             500: "#6870fa",
             600: "#868dfb",
             700: "#a4a9fc",
-            800: "#c3c6fd",
+            800: "#868dfb",
             900: "#e1e2fe"
         }
     })
@@ -143,10 +143,10 @@ export const themeSettings = (mode) => {
                 }
             } : {
                 primary: {
-                    main: colors.primary[100],
+                    main: colors.primary[300],
                 },
                 secondary: {
-                    main: colors.greenAccent[500],
+                    main: colors.greenAccent[300],
                 },
                 neutral: {
                     dark: colors.grey[700],
@@ -159,31 +159,31 @@ export const themeSettings = (mode) => {
             })
         },
         typography: {
-            fontFamily: ["Source Sans 3", "sans-serif"].join(","),
+            fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
             fontSize: 12,
             h1: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
-                fontSize: 40,
+                fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
+                fontSize: 40
             },
             h2: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
-                fontSize: 32,
+                fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
+                fontSize: 32
             },
             h3: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
-                fontSize: 24,
+                fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
+                fontSize: 24
             },
             h4: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
-                fontSize: 20,
+                fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
+                fontSize: 20
             },
             h5: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
-                fontSize: 16,
+                fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
+                fontSize: 16
             },
             h6: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
-                fontSize: 14,
+                fontFamily: ["'Source Sans 3'", "sans-serif"].join(", "),
+                fontSize: 14
             },
         }
     }

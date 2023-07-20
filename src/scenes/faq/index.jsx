@@ -16,7 +16,7 @@ const FAQ = () => {
 
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
-                    <Typography color={colors.greenAccent[500]} variant="h5">
+                    <Typography color={colors.redAccent[500]} variant="h5">
                         Why can't I see the dashboard?
                     </Typography>
                 </AccordionSummary>
@@ -29,7 +29,7 @@ const FAQ = () => {
 
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
-                    <Typography color={colors.greenAccent[500]} variant="h5">
+                    <Typography color={colors.redAccent[500]} variant="h5">
                         My personal details are wrong.
                     </Typography>
                 </AccordionSummary>
@@ -42,7 +42,7 @@ const FAQ = () => {
 
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
-                    <Typography color={colors.greenAccent[500]} variant="h5">
+                    <Typography color={colors.redAccent[500]} variant="h5">
                         Holiday Requests
                     </Typography>
                 </AccordionSummary>
@@ -55,7 +55,7 @@ const FAQ = () => {
 
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
-                    <Typography color={colors.greenAccent[500]} variant="h5">
+                    <Typography color={colors.redAccent[500]} variant="h5">
                         When are paydays?
                     </Typography>
                 </AccordionSummary>
@@ -68,7 +68,7 @@ const FAQ = () => {
 
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={ <ExpandMoreIcon /> }>
-                    <Typography color={colors.greenAccent[500]} variant="h5">
+                    <Typography color={colors.redAccent[500]} variant="h5">
                         How are sales kept updated?
                     </Typography>
                 </AccordionSummary>

@@ -33,3 +33,20 @@ body,
 ::-webkit-scrollbar-track:hover {
   background: #555;
 }
+
+:root {
+  --fc-today-bg-color: #db4f4a !important;
+  --fc-event-bg-color: #9fa2a6;
+  --fc-event-border-color: #37d85d;
+  --fc-page-bg-color: #6e7479;
+  --fc-list-event-hover-bg-color: #6e8499;
+}
+
+.fc-event:hover,
+.fc-event-start:hover,
+.fc-event-end:hover,
+.fc-event-today:hover,
+.fc-event-future:hover,
+.fc-list-event:hover {
+  background-color: #6e8499 !important;
+}

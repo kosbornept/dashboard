@@ -120,7 +120,7 @@ const PieChart = () => {
                 ${point.datum.value},000
             </div>
         )
-    }}
+      }}
     />
   );
 };

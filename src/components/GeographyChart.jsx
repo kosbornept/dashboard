@@ -10,6 +10,7 @@ const GeographyChart = ({ isDashboard = false }) => {
   return (
     <ResponsiveChoropleth
       data={data}
+      colors="RdYlGn"
       theme={{
         axis: {
           domain: {
@@ -40,7 +41,7 @@ const GeographyChart = ({ isDashboard = false }) => {
       }}
       features={geoFeatures.features}
       margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
-      domain={[0, 1000000]}
+      domain={[0, 20]}
       unknownColor="#666666"
       label="properties.name"
       valueFormat=".2s"
@@ -78,6 +79,28 @@ const GeographyChart = ({ isDashboard = false }) => {
             ]
           : undefined
       }
+      tooltip={e => {
+        return (
+          <div
+            style={{
+              background: "white",
+              padding: "9px 12px",
+              border: "1px solid #ccc",
+              borderRadius: "25px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              color: "black",
+            }}
+          >
+            {e.feature.properties.name}:{" "}
+            {e.feature.value
+              ? e.feature.value.toLocaleString()
+              : "No data"}
+          </div>
+        );
+      }}
     />
   );
 };

@@ -227,7 +227,7 @@ const Dashboard = () => {
                         </Box>
                         <Box color={colors.grey[100]}>{transaction.date}</Box>
                         <Box 
-                            backgroundColor={colors.greenAccent[500]} 
+                            backgroundColor={colors.greenAccent[800]} 
                             padding="5px 10px" 
                             borderRadius="4px"
                         >
@@ -308,7 +308,7 @@ const Dashboard = () => {
                         mb: "15px"
                     }}
                 >
-                    Geography Based Traffic
+                    Total Stores
                 </Typography>
                 <Box
                     height="200px"

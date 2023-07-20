@@ -9,7 +9,7 @@ const Geography = () => {
     const colors = tokens(theme.palette.mode);
     return (
         <Box m="20px">
-            <Header title="Total Sales" subtitle="Since 2018" />
+            <Header title="Worldwide Stores" subtitle="As of 2022" />
             <Box height="75vh" border={`1px solid ${colors.grey[100]}`} borderRadius="4px">
                 <GeographyChart />
             </Box>
