@@ -69,7 +69,7 @@ const Contacts = () => {
                         color: colors.greenAccent[300]
                     },
                     "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: colors.blueAccent[700],
+                        backgroundColor: colors.blueAccent[800],
                         borderBottom: "none"
                     },
                     "& .MuiDataGrid-virtualScroller": {
@@ -77,7 +77,7 @@ const Contacts = () => {
                     },
                     "& .MuiDataGrid-footerContainer": {
                         borderTop: "none",
-                        backgroundColor: colors.blueAccent[700]
+                        backgroundColor: colors.blueAccent[800]
                     },
                     "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
                         color: `${colors.grey[100]} !important`

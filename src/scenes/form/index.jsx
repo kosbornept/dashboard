@@ -124,7 +124,7 @@ const Form = () => {
                             />
                         </Box>
                         <Box display="flex" justifyContent="end" mt="20px">
-                            <Button disabled={!isValid || !dirty} onClick={notify} type="submit" color="secondary" variant="contained">
+                            <Button disabled={!isValid || !dirty} onClick={notify} type="submit" color="success" variant="contained">
                                 Create New User
                             </Button>
                             <ToastContainer

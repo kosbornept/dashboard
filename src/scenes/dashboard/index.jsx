@@ -26,7 +26,7 @@ const Dashboard = () => {
         <Box>
             <Button
             sx={{
-                backgroundColor: colors.blueAccent[700],
+                backgroundColor: colors.blueAccent[800],
                 color: colors.grey[100],
                 fontSize: "14px",
                 fontWeight: "bold",
@@ -65,7 +65,7 @@ const Dashboard = () => {
                 increase="+14%"
                 icon={
                     <EmailIcon 
-                        sx={{ color: colors.greenAccent[600], fontSize: "26px"} } 
+                        sx={{ color: colors.greenAccent[500], fontSize: "26px"} } 
                     />
                 }
             />
@@ -84,7 +84,7 @@ const Dashboard = () => {
                 increase="-1.2%"
                 icon={
                     <PointOfSaleIcon 
-                        sx={{ color: colors.greenAccent[600], fontSize: "26px"} } 
+                        sx={{ color: colors.greenAccent[500], fontSize: "26px"} } 
                     />
                 }
             />
@@ -103,7 +103,7 @@ const Dashboard = () => {
                 increase="+5%"
                 icon={
                     <PersonAddIcon 
-                        sx={{ color: colors.greenAccent[600], fontSize: "26px"} } 
+                        sx={{ color: colors.greenAccent[500], fontSize: "26px"} } 
                     />
                 }
             />
@@ -122,7 +122,7 @@ const Dashboard = () => {
                 increase="+43%"
                 icon={
                     <TrafficIcon 
-                        sx={{ color: colors.greenAccent[600], fontSize: "26px"} } 
+                        sx={{ color: colors.greenAccent[500], fontSize: "26px"} } 
                     />
                 }
             />

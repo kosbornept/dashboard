@@ -49,9 +49,11 @@ const Team = () => {
                         display="flex"
                         justifyContent="center"
                         backgroundColor={
-                            access === "admin"
-                            ? colors.greenAccent[600]
-                            : colors.greenAccent[700]
+                            access === "Admin"
+                            ? colors.redAccent[600]
+                            : access === "Manager"
+                            ? colors.blueAccent[800]
+                            : colors.greenAccent[900]
                         }
                         borderRadius="4px"
                     >
@@ -84,7 +86,7 @@ const Team = () => {
                         color: colors.greenAccent[300]
                     },
                     "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: colors.blueAccent[700],
+                        backgroundColor: colors.blueAccent[800],
                         borderBottom: "none"
                     },
                     "& .MuiDataGrid-virtualScroller": {
@@ -92,7 +94,7 @@ const Team = () => {
                     },
                     "& .MuiDataGrid-footerContainer": {
                         borderTop: "none",
-                        backgroundColor: colors.blueAccent[700]
+                        backgroundColor: colors.blueAccent[800]
                     }
                  }}
             >
