@@ -34,6 +34,7 @@ body,
   background: #555;
 }
 
+/* Themes */
 :root {
   --fc-today-bg-color: #db4f4a !important;
   --fc-event-bg-color: #9fa2a6;
@@ -49,4 +50,10 @@ body,
 .fc-event-future:hover,
 .fc-list-event:hover {
   background-color: #6e8499 !important;
+}
+
+/* Pro Sidebar */
+
+.pro-sidebar {
+  height: fit-content !important;
 }
