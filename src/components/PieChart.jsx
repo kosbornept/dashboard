@@ -97,7 +97,7 @@ const PieChart = () => {
             {
               on: "hover",
               style: {
-                itemTextColor: "#000",
+                itemTextColor: "#db4f4a",
               },
             },
           ],

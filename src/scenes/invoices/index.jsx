@@ -81,6 +81,11 @@ const Invoices = () => {
                             "&:focus": {
                                 outlineColor: colors.grey[100]
                             }
+                        },
+                        "& .MuiDataGrid-columnHeader": {
+                            "&:focus-within": {
+                                outlineColor: colors.grey[100]
+                            }
                         }
                     }}
                 />

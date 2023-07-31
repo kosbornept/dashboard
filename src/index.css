@@ -57,3 +57,15 @@ body,
 .pro-sidebar {
   height: fit-content !important;
 }
+
+/* DataGrid */
+
+.css-pie2ao-MuiButtonBase-root-MuiButton-root {
+  color: white !important;
+}
+
+/* Line Chart */
+
+line {
+  stroke: #db4f4a !important;
+}
